@@ -42,3 +42,24 @@ def tambah(*args):
     print(n)
 
 tambah(10,20,30,5)
+
+print("----------------------------------")
+print(">> Lambda Function")
+
+nilai = lambda x,y : x ** 2
+print(nilai(4,2))
+
+nomor = [23,33,65,77]
+nilai = map(lambda num : num ** 2, nomor)
+print(list(nilai))
+
+print("----------------------------------")
+print(">> Error Handling")
+
+def eh(x):
+    try:
+        return x ** 2
+    except:
+        print("x harus INTEGER atau FLOAT")
+        
+print(eh("HAI"))
